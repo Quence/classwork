@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+  }
+.map{
+border: 15px solid green;
+position: fixed;
+top: 0px !important;
+left: 0px !important;
+width: 200px;
+height: 200px;
+}
+.upper-menu{
+border: 15px solid green;
+position: fixed;
+top: 0px !important;
+left: 300px !important;
+width: 900px;
+height: 50px;
+}
+/* .menu-item {
+border: 5px solid green;
+position: absolute; 
+} */
+
+.menu-item  {
+position: relative;
+background: white;
+text-align: right;
+padding: 10px 15px;
+border-radius: 6px;
+border: 1px solid #ccc;
+float: left;
+right: 20px;
+}
+
+.menu-item ::before {
+content: '';
+position: absolute;
+visibility: visible;
+/* top: -1px; */
+/* right: -10px; */
+border: 10px solid transparent;
+border-top: 10px solid #ccc;
+}
+
+.menu-item ::after {
+content: '';
+position: absolute;
+visibility: visible;
+top: 0px;
+/* right: -8px; */
+border: 10px solid transparent;
+border-top: 10px solid white;
+clear: both;
+}
+.status-wrapper{
+
+display: flex;
+padding-top: 700px;
+justify-content: center;
+align-items: center;
+text-align: center;
+min-height: 100vh;
+}
